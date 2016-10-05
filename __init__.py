@@ -18,8 +18,15 @@ class Command:
         text = func(cnt, sel, line)
         if not text: return
         ed.insert(0, y0, text+'\n')
-        ed.set_caret(0, y0+1)
         msg_status('Inserted section')
+        
+        pos = get_section_name_pos(text)
+        if pos:
+            pos1, pos2 = pos 
+            ed.set_caret(pos1, y0, pos2, y0)
+        else:
+            ed.set_caret(0, y0)
+            
 
     def do_section(self):
         self._section(get_section)
@@ -31,8 +38,15 @@ class Command:
         self._section(get_subsubsection)
         
     def do_toc(self):
-        text = get_toc(ed.get_text_all())
+        contents = ed.get_text_all()
+        #del old TOC
+        num = get_toc_lines_count(contents)
+        if num>0:
+            ed.delete(0, 0, 0, num+1)
+        #insert new TOC    
+        text = get_toc(contents)
         if not text: return
         ed.insert(0, 0, text)
+        
         ed.set_caret(0, 0)
         msg_status('Inserted TOC')
