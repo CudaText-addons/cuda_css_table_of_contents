@@ -10,25 +10,25 @@ section=commands
 caption=CSS Table of Contents\Create section
 method=do_section
 lexers=CSS
-hotkey=Ctrl+T|G
+hotkey=Ctrl+T|Ctrl+G
 
 [item2]
 section=commands
 caption=CSS Table of Contents\Create sub-section
 method=do_section_sub
 lexers=CSS
-hotkey=Ctrl+T|H
+hotkey=Ctrl+T|Ctrl+H
 
 [item3]
 section=commands
 caption=CSS Table of Contents\Create sub-sub-section
 method=do_section_sub_sub
 lexers=CSS
-hotkey=Ctrl+T|J
+hotkey=Ctrl+T|Ctrl+J
 
 [item4]
 section=commands
 caption=CSS Table of Contents\Create TOC
 method=do_toc
 lexers=CSS
-hotkey=Ctrl+T|T
+hotkey=Ctrl+T|Ctrl+T

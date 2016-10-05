@@ -8,12 +8,12 @@ Add sections, subsections and sub-subsections to your .css file with ease. The p
 
 ## How to use it
 
-Use command in Plugins menu or hotkeys:
+Plugin adds commands to Plugins menu, and hotkeys for CSS lexer:
 
-- `ctrl+t, g` for section
-- `ctrl+t, h` for sub-section
-- `ctrl+t, j` for sub-sub-section
-- `ctrl+t, t` for table of contents creation
+- `Ctrl+T, Ctrl+G` for section
+- `Ctrl+T, Ctrl+H` for sub-section
+- `Ctrl+T, Ctrl+J` for sub-sub-section
+- `Ctrl+T, Ctrl+T` for table of contents creation
 
 ## About
 
