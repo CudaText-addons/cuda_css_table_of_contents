@@ -1,9 +1,9 @@
 [info]
 title=CSS Table of Contents
-desc=Creates Table-of-Contents, sections, in CSS files
+desc=For CSS files: creates table-of-contents, its sections/sub-sections
 type=cudatext-plugin
 subdir=cuda_css_toc
-homepage=
+homepage=https://github.com/CudaText-addons/cuda_css_toc
 
 [item1]
 section=commands
