@@ -1,6 +1,9 @@
 
+2019.01.10
+* removed all default hotkeys
+
 2016.10.06
-* chg hotkeys
+* changed hotkeys
 
 2016.10.05
-init
+initial
